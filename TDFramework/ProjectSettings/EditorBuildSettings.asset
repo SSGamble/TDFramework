@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/TDFramework/Examples/3.MainManager/Home/Home.unity
+    guid: 2eca449c770bc1b4a920bfcbae9f7b61
+  - enabled: 1
+    path: Assets/TDFramework/Examples/3.MainManager/Game/Game.unity
+    guid: 94e989f1399e6bc4b8c147109b6612ec
