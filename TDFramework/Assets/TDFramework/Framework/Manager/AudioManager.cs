@@ -8,26 +8,16 @@
 using UnityEngine;
 
 namespace TDFramework {
-    public class AudioManager : MonoBehaviour {
-        // 单例
-        private static AudioManager mInstance;
-        public static AudioManager Instance {
-            get {
-                if (mInstance == null) {
-                    mInstance = new
-                    GameObject("AudioManager").AddComponent<AudioManager>();
-                    DontDestroyOnLoad(mInstance); // 不被销毁
-                }
-                return mInstance;
-            }
-        }
-
+    public class AudioManager : MonoSingleton<AudioManager> {
         private AudioListener mAudioListener;
         private AudioSource mMusicSource = null; // BGM
 
         private void CheckAudioListener() {
             if (!mAudioListener) {
-                mAudioListener = gameObject.AddComponent<AudioListener>();
+                mAudioListener = FindObjectOfType<AudioListener>();
+                if (!mAudioListener) {
+                    mAudioListener = gameObject.AddComponent<AudioListener>();
+                }
             }
         }
 
@@ -106,6 +96,6 @@ namespace TDFramework {
         }
         #endregion
 
-        
+
     }
 }
