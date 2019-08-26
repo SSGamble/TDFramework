@@ -41,5 +41,59 @@ namespace TDFramework {
             }
             return result;
         }
+
+        /// <summary>
+        /// 复制指定文件夹下的所有文件到另一个文件夹
+        /// </summary>
+        /// <param name="srcPath">原路径</param>
+        /// <param name="targetPath">目标路径</param>
+        private static void CopyDirFiles(string srcPath, string targetPath) {
+            try {
+                if (!Directory.Exists(targetPath)) {
+                    Directory.CreateDirectory(targetPath);
+                }
+                string scrdir = Path.Combine(targetPath, Path.GetFileName(srcPath));
+                if (Directory.Exists(srcPath))
+                    scrdir += Path.DirectorySeparatorChar;
+                if (!Directory.Exists(scrdir)) {
+                    Directory.CreateDirectory(scrdir);
+                }
+                string[] files = Directory.GetFileSystemEntries(srcPath); // 原路径下的所有文件
+                foreach (string file in files) {
+                    if (Directory.Exists(file)) {
+                        CopyDirFiles(file, scrdir); // 文件夹，递归
+                    }
+                    else {
+                        File.Copy(file, scrdir + Path.GetFileName(file), true); // 文件，复制
+                    }
+                }
+            }
+            catch {
+                Debug.LogError("无法复制：" + srcPath + "  到" + targetPath);
+            }
+        }
+
+        /// <summary>
+        /// 删除指定文件夹下的所有文件
+        /// </summary>
+        /// <param name="scrPath">文件夹路径</param>
+        public static void DelDirFiles(string scrPath) {
+            try {
+                DirectoryInfo dir = new DirectoryInfo(scrPath);
+                FileSystemInfo[] fileInfo = dir.GetFileSystemInfos();
+                foreach (FileSystemInfo info in fileInfo) {
+                    if (info is DirectoryInfo) {
+                        DirectoryInfo subdir = new DirectoryInfo(info.FullName);
+                        subdir.Delete(true);
+                    }
+                    else {
+                        File.Delete(info.FullName);
+                    }
+                }
+            }
+            catch (Exception e) {
+                Debug.LogError(e);
+            }
+        }
     }
 }
