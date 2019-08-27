@@ -27,6 +27,21 @@ namespace TDFramework {
         public static T GetRandomValueFrom<T>(params T[] values) {
             return values[Random.Range(0, values.Length)];
         }
+
+        /// <summary>
+        /// 获取一个随机数
+        /// </summary>
+        /// <param name="min">最小值（包括）</param>
+        /// <param name="max">最大值（不包括）</param>
+        /// <param name="ran">随机种子</param>
+        /// <returns></returns>
+        public static int RanInt(int min, int max, System.Random ran = null) {
+            if (ran == null) {
+                ran = new System.Random();
+            }
+            int val = ran.Next(min, max + 1);
+            return val;
+        }
     }
 }
 
