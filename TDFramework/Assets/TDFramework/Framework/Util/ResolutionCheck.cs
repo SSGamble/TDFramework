@@ -5,7 +5,6 @@
 	功能：分辨率检测
 *****************************************************/
 
-using UnityEditor;
 using UnityEngine;
 
 namespace TDFramework {

@@ -12,6 +12,17 @@ using UnityEngine;
 namespace TDFramework {
 
     public class FileUtil : MonoBehaviour {
+
+        /// <summary>
+        /// 若路径不存在则创建文件夹
+        /// </summary>
+        /// <param name="path">路径</param>
+        public static void CreateDirectory(string path) {
+            if (!Directory.Exists(path)) {
+                Directory.CreateDirectory(path);
+            }
+        }
+
         /// <summary>
         /// 判断文件是否被占用
         /// </summary>

@@ -108,22 +108,22 @@ namespace TDFramework {
         /// <returns></returns>
         public static T BinaryDeserilize<T>(string path) where T : class {
             T t = default(T);
-            //TextAsset textAsset = ResourceManager.Instance.LoadResource<TextAsset>(path);
-            TextAsset textAsset = UnityEditor.AssetDatabase.LoadAssetAtPath<TextAsset>(path);
-            if (textAsset == null) {
-                UnityEngine.Debug.LogError("cant load TextAsset: " + path);
-                return null;
-            }
-            try {
-                using (MemoryStream stream = new MemoryStream(textAsset.bytes)) {
-                    BinaryFormatter bf = new BinaryFormatter();
-                    t = (T)bf.Deserialize(stream);
-                }
-                //ResourceManager.Instance.ReleaseResouce(path, true);
-            }
-            catch (Exception e) {
-                Debug.LogError("load TextAsset exception: " + path + "," + e);
-            }
+            ////TextAsset textAsset = ResourceManager.Instance.LoadResource<TextAsset>(path);
+            //TextAsset textAsset = UnityEditor.AssetDatabase.LoadAssetAtPath<TextAsset>(path);
+            //if (textAsset == null) {
+            //    UnityEngine.Debug.LogError("cant load TextAsset: " + path);
+            //    return null;
+            //}
+            //try {
+            //    using (MemoryStream stream = new MemoryStream(textAsset.bytes)) {
+            //        BinaryFormatter bf = new BinaryFormatter();
+            //        t = (T)bf.Deserialize(stream);
+            //    }
+            //    //ResourceManager.Instance.ReleaseResouce(path, true);
+            //}
+            //catch (Exception e) {
+            //    Debug.LogError("load TextAsset exception: " + path + "," + e);
+            //}
             return t;
         }
     }
