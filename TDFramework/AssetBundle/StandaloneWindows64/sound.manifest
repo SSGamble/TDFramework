@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 557188729
+CRC: 778980080
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 68781d43234d3151b9d6b026053ec0b9
+    Hash: fc11aee1ed81e31acc611c3dfb95c4e8
   TypeTreeHash:
     serializedVersion: 2
     Hash: 3f7d0c5e0986ec71841622bcb2f9be1c
@@ -12,6 +12,7 @@ ClassTypes:
 - Class: 83
   Script: {instanceID: 0}
 Assets:
+- Assets/GameData/Sounds/Coin.wav
 - Assets/GameData/Sounds/menusound.mp3
 - Assets/GameData/Sounds/senlin.mp3
 Dependencies: []

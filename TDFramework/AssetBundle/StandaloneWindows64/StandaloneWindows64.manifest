@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1947415226
+CRC: 2931927256
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -22,11 +22,5 @@ AssetBundleManifest:
       Name: particletest1
       Dependencies: {}
     Info_6:
-      Name: loadingpanel
-      Dependencies: {}
-    Info_7:
-      Name: menupanel
-      Dependencies: {}
-    Info_8:
       Name: assetbundleconfig
       Dependencies: {}

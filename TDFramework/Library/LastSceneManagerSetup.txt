@@ -1,4 +1,4 @@
 sceneSetups:
-- path: "Assets/TDFramework/Examples/RealFram/\u57FA\u7840\u8D44\u6E90\u9884\u52A0\u8F7D/Start.unity"
+- path: "Assets/TDFramework/Examples/RealFram/UI \u6846\u67B6/GameRoot.unity"
   isLoaded: 1
   isActive: 1

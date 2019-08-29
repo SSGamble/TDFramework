@@ -1,8 +1,8 @@
 ﻿/****************************************************
-    文件：PreloadLoadDemo.cs
+	文件：PreloadLoadDemo.cs
 	作者：TravelerTD
-    日期：#CreateTime#
-	功能：Nothing
+	日期：2019/08/29 10:08:50   	
+	功能：对象池预加载，示例
 *****************************************************/
 
 using UnityEngine;
@@ -13,7 +13,6 @@ public class PreloadLoadDemo : MonoBehaviour {
     private void Awake() {
         GameObject.DontDestroyOnLoad(gameObject); // 跳场景不卸载
         AssetBundleManager.Instance.LoadAssetBundleConfig(); // 加载配置表
-        ResourceManager.Instance.Init(this);
         ObjectManager.Instance.Init(transform.Find("RecyclePoolTrs"), transform.Find("SceneTrs")); // 归置对象池对象位置
     }
 

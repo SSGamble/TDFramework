@@ -9,13 +9,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ConStr {
+
+    /// <summary>
+    /// 窗体 Prefab 的路径
+    /// </summary>
+    public const string PREFAB_UI_PATH = "Assets/TDFramework/Examples/RealFram/UI 框架/UIPrefab/";
+
     // 界面名称
-    public const string LOADINGPANEL = "LoadingPanel.prefab";
-    public const string MENUPANEL = "MenuPanel.prefab";
+    public const string TASK_PANEL = "TaskWnd.prefab";
+    public const string SKILL_PANEL = "SkillWnd.prefab";
+    public const string MAIN_PANEL = "MainWnd.prefab";
 
     // 场景名称
-    public const string MENUSCENE = "Menu";
-    public const string EMPTYSCENE = "Empty";
+    public const string MENU_SCENE = "Menu";
+    public const string GAME_SCENE = "Game";
+    public const string GAME_ROOT_SCENE = "GameRoot";
 
     // 临时 prefab 路径
     public const string ATTACK = "Assets/GameData/Prefabs/Attack.prefab";

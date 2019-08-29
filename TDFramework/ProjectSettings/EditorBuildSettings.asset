@@ -6,17 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/TDFramework/Examples/3.MainManager/Home/Home.unity
-    guid: 2eca449c770bc1b4a920bfcbae9f7b61
+    path: "Assets/TDFramework/Examples/RealFram/UI \u6846\u67B6/Game.unity"
+    guid: 416ebdf00b7166a4d9ed70887c7aaad9
   - enabled: 1
-    path: Assets/TDFramework/Examples/3.MainManager/Game/Game.unity
-    guid: 94e989f1399e6bc4b8c147109b6612ec
-  - enabled: 1
-    path: "Assets/Demo/UI \u6846\u67B6/Empty.unity"
-    guid: 2fc904934030e9f4ab808aad948de797
-  - enabled: 1
-    path: "Assets/Demo/UI \u6846\u67B6/Menu.unity"
-    guid: 1e236d545f709cb49984afadc4b548cf
-  - enabled: 1
-    path: "Assets/Demo/UI \u6846\u67B6/Start.unity"
+    path: "Assets/TDFramework/Examples/RealFram/UI \u6846\u67B6/GameRoot.unity"
     guid: 57e92e6757752e54fa99dadde09e7698
+  - enabled: 1
+    path: "Assets/TDFramework/Examples/RealFram/UI \u6846\u67B6/Menu.unity"
+    guid: 0314bfdc0962dc548a111658c04420be

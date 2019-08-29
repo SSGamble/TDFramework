@@ -13,7 +13,7 @@ public class RealFrameConfig {
     /// <summary>
     /// 是否从 AB 加载，true：从 AB 加载，false：从编辑器加载
     /// </summary>
-    public const bool loadFormAB = true;
+    public const bool loadFormAB = false;
 
     #region AB 包
     /// <summary>

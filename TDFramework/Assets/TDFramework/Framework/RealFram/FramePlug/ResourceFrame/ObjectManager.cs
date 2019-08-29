@@ -37,7 +37,7 @@ public class ObjectManager : Singleton<ObjectManager> {
     protected Dictionary<long, ResourceObj> m_AsyncResObjs = new Dictionary<long, ResourceObj>();
 
     /// <summary>
-    /// 初始化
+    /// 初始化，归置对象池对象位置
     /// </summary>
     /// <param name="recycleTrs">回收节点</param>
     /// <param name="sceneTrs">场景默认节点</param>
@@ -179,7 +179,7 @@ public class ObjectManager : Singleton<ObjectManager> {
     }
 
     /// <summary>
-    /// 预加载 GamObject
+    /// 预加载 GamObject，供外界调用
     /// </summary>
     /// <param name="path">路径</param>
     /// <param name="count">预加载个数</param>
@@ -199,9 +199,9 @@ public class ObjectManager : Singleton<ObjectManager> {
     }
 
     /// <summary>
-    /// 同步对象加载
+    /// 同步对象加载，供外界调用
     /// </summary>
-    /// <param name="path"></param>
+    /// <param name="path">资源路径</param>
     /// <param name="setSceneObj">是否要放到默认的节点下</param>
     /// <param name="bClear">跳转场景时是否清除</param>
     /// <returns></returns>
@@ -232,7 +232,7 @@ public class ObjectManager : Singleton<ObjectManager> {
     }
 
     /// <summary>
-    /// 异步对象加载
+    /// 异步对象加载，供外界调用
     /// </summary>
     /// <param name="path"></param>
     /// <param name="dealFinish">异步加载，资源加载完成的回调</param>
@@ -310,9 +310,9 @@ public class ObjectManager : Singleton<ObjectManager> {
     }
 
     /// <summary>
-    /// 释放资源
+    /// 释放对象资源，供外界调用
     /// </summary>
-    /// <param name="obj"></param>
+    /// <param name="obj">资源对象</param>
     /// <param name="maxCacheCount">最大缓存个数，-1：不限，0：不缓存</param>
     /// <param name="destoryCache">是否删除缓存</param>
     /// <param name="recycleParent">是否要回收到父节点下</param>
@@ -338,7 +338,7 @@ public class ObjectManager : Singleton<ObjectManager> {
         obj.name += "(Recycle)";
 #endif
         List<ResourceObj> st = null;
-        // 不缓存
+        // 不缓存，直接回收
         if (maxCacheCount == 0) {
             m_ResourceObjDic.Remove(tempID);
             ResourceManager.Instance.ReleaseResouce(resObj, destoryCache);
