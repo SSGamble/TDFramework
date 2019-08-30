@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 225234008
+CRC: 1652985291
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 2ce167feb448892f8c88c8c7127e71a0
+    Hash: 5b073662c58e1bc0e1c83e2b59d3e03c
   TypeTreeHash:
     serializedVersion: 2
     Hash: 5ad585dd02dfb5016c0dad519eab8f49
@@ -12,6 +12,6 @@ ClassTypes:
 - Class: 49
   Script: {instanceID: 0}
 Assets:
-- Assets/GameData/Data/Binary/MonsterData.bytes
-- Assets/GameData/Data/Binary/BuffData.bytes
+- Assets/TDFramework/GameData/Data/Binary/MonsterData.bytes
+- Assets/TDFramework/GameData/Data/Binary/BuffData.bytes
 Dependencies: []

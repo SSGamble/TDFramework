@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Name: ABConfig
   m_EditorClassIdentifier: 
   m_AllPrefabPath:
-  - Assets/GameData/Prefabs
+  - Assets/TDFramework/GameData/Prefabs
   m_AllFileDirAB:
   - ABName: shader
-    Path: Assets/GameData/Shaders
+    Path: Assets/TDFramework/GameData/Shaders
   - ABName: sound
-    Path: Assets/GameData/Sounds
+    Path: Assets/TDFramework/GameData/Sounds
   - ABName: ugui
-    Path: Assets/GameData/UGUI
+    Path: Assets/TDFramework/GameData/UGUI
   - ABName: bytes
-    Path: Assets/GameData/Data/Binary
+    Path: Assets/TDFramework/GameData/Data/Binary

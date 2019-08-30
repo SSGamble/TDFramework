@@ -23,7 +23,7 @@ public class RealFrameConfig {
     /// <summary>
     /// 打包时生成 AB 包配置表的二进制路径
     /// </summary>
-    public const string m_ABBytePath = "Assets/GameData/Data/ABData/AssetBundleConfig.bytes";
+    public const string m_ABBytePath = "Assets/TDFramework/GameData/Data/ABData/AssetBundleConfig.bytes";
     #endregion
 
     #region 数据配置表
@@ -38,15 +38,15 @@ public class RealFrameConfig {
     /// <summary>
     /// xml 文件夹路径
     /// </summary>
-    public const string m_XmlPath = "Assets/GameData/Data/Xml/";
+    public const string m_XmlPath = "Assets/TDFramework/GameData/Data/Xml/";
     /// <summary>
     /// 二进制文件夹路径
     /// </summary>
-    public const string m_BinaryPath = "Assets/GameData/Data/Binary/";
+    public const string m_BinaryPath = "Assets/TDFramework/GameData/Data/Binary/";
     /// <summary>
-    /// 脚本文件夹路径
+    /// 数据信息脚本文件夹路径
     /// </summary>
-    public const string m_ScriptsPath = "Assets/Scripts/Data/";
+    public const string m_ScriptsPath = "Assets/TDFramework/Examples/RealFram/DataConfig/Scripts/Data/";
     #endregion
     #endregion
 

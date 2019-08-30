@@ -17,7 +17,7 @@ public class PreloadLoadDemo : MonoBehaviour {
     }
 
     private void Start() {
-        ObjectManager.Instance.PreloadGameObject("Assets/GameData/Prefabs/Attack.prefab", 20); // 预加载资源
+        ObjectManager.Instance.PreloadGameObject(ConStr.ATTACK, 20); // 预加载资源
     }
 
     private void Update() {
@@ -26,7 +26,7 @@ public class PreloadLoadDemo : MonoBehaviour {
             obj = null;
         }
         else if (Input.GetKeyDown(KeyCode.D)) {
-            obj = ObjectManager.Instance.InstantiateObject("Assets/GameData/Prefabs/Attack.prefab", true); // 同步加载资源，放到默认的节点下
+            obj = ObjectManager.Instance.InstantiateObject(ConStr.ATTACK, true); // 同步加载资源，放到默认的节点下
         }
         else if (Input.GetKeyDown(KeyCode.S)) {
             ObjectManager.Instance.ReleaseObject(obj, 0, true, true); // 释放资源，删除缓存

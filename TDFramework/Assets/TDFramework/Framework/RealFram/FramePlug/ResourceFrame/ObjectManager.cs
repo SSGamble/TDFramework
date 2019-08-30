@@ -37,7 +37,7 @@ public class ObjectManager : Singleton<ObjectManager> {
     protected Dictionary<long, ResourceObj> m_AsyncResObjs = new Dictionary<long, ResourceObj>();
 
     /// <summary>
-    /// 初始化，归置对象池对象位置
+    /// 初始化，创建类对象池，归置对象池对象位置
     /// </summary>
     /// <param name="recycleTrs">回收节点</param>
     /// <param name="sceneTrs">场景默认节点</param>

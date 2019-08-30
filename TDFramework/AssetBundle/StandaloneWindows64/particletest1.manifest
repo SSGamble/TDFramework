@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1718708239
+CRC: 1054280740
 Hashes:
   AssetFileHash:
     serializedVersion: 2
@@ -28,5 +28,5 @@ ClassTypes:
 - Class: 199
   Script: {instanceID: 0}
 Assets:
-- Assets/GameData/Prefabs/Effect/ParticleTest1.prefab
+- Assets/TDFramework/GameData/Prefabs/Effect/ParticleTest1.prefab
 Dependencies: []

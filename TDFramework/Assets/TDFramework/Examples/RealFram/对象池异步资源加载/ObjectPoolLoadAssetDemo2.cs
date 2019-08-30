@@ -18,7 +18,7 @@ public class ObjectPoolLoadAssetDemo2 : MonoBehaviour {
     }
 
     private void Start() {
-        ObjectManager.Instance.InstantiateObjectAsync("Assets/GameData/Prefabs/Attack.prefab", OnLoadFinish, LoadResPriority.RES_HIGHT, true); // 异步加载资源
+        ObjectManager.Instance.InstantiateObjectAsync(ConStr.ATTACK, OnLoadFinish, LoadResPriority.RES_HIGHT, true); // 异步加载资源
     }
 
     /// <summary>
@@ -34,7 +34,7 @@ public class ObjectPoolLoadAssetDemo2 : MonoBehaviour {
             obj = null;
         }
         else if (Input.GetKeyDown(KeyCode.D)) {
-            ObjectManager.Instance.InstantiateObjectAsync("Assets/GameData/Prefabs/Attack.prefab", OnLoadFinish, LoadResPriority.RES_HIGHT, true); // 异步加载资源
+            ObjectManager.Instance.InstantiateObjectAsync(ConStr.ATTACK, OnLoadFinish, LoadResPriority.RES_HIGHT, true); // 异步加载资源
         }
         else if (Input.GetKeyDown(KeyCode.S)) {
             ObjectManager.Instance.ReleaseObject(obj, 0, true, true); // 释放资源，删除缓存

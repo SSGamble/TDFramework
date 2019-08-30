@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 778980080
+CRC: 32987884
 Hashes:
   AssetFileHash:
     serializedVersion: 2
@@ -12,7 +12,7 @@ ClassTypes:
 - Class: 83
   Script: {instanceID: 0}
 Assets:
-- Assets/GameData/Sounds/Coin.wav
-- Assets/GameData/Sounds/menusound.mp3
-- Assets/GameData/Sounds/senlin.mp3
+- Assets/TDFramework/GameData/Sounds/Coin.wav
+- Assets/TDFramework/GameData/Sounds/menusound.mp3
+- Assets/TDFramework/GameData/Sounds/senlin.mp3
 Dependencies: []

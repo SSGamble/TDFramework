@@ -216,7 +216,7 @@ public class BundleEditor {
     static void SetABName(string name, string path) {
         AssetImporter assetImporter = AssetImporter.GetAtPath(path);
         if (assetImporter == null) {
-            Debug.LogError("不存在此路径文件：" + path);
+            Debug.LogError("不存在此路径文件：" + path + "，请检查 ABConfig");
         }
         else {
             assetImporter.assetBundleName = name;

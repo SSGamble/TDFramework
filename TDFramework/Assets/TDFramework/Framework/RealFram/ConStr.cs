@@ -10,15 +10,13 @@ using UnityEngine;
 
 public class ConStr {
 
-    /// <summary>
-    /// 窗体 Prefab 的路径
-    /// </summary>
-    public const string PREFAB_UI_PATH = "Assets/TDFramework/Examples/RealFram/UI 框架/UIPrefab/";
-
-    // 界面名称
-    public const string TASK_PANEL = "TaskWnd.prefab";
-    public const string SKILL_PANEL = "SkillWnd.prefab";
-    public const string MAIN_PANEL = "MainWnd.prefab";
+    // 窗体 Prefab 的路径
+    public const string UIWND_PRE_PATH = "Assets/TDFramework/Examples/UIFram/UIWnd/";
+    // 窗口名称
+    public const string SKILL_WND = "SkillWnd.prefab";
+    public const string MAIN_WND = "MainWnd.prefab";
+    public const string SET_WND = "SetWnd.prefab";
+    
 
     // 场景名称
     public const string MENU_SCENE = "Menu";
@@ -26,8 +24,8 @@ public class ConStr {
     public const string GAME_ROOT_SCENE = "GameRoot";
 
     // 临时 prefab 路径
-    public const string ATTACK = "Assets/GameData/Prefabs/Attack.prefab";
+    public const string ATTACK = "Assets/TDFramework/GameData/Prefabs/Attack.prefab";
 
     // 临时音乐资源
-    public const string MENUSOUND = "Assets/GameData/Sounds/menusound.mp3";
+    public const string MENUSOUND = "Assets/TDFramework/GameData/Sounds/menusound.mp3";
 }

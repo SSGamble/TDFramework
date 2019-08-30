@@ -18,12 +18,12 @@ public class ObjectPoolLoadAssetDemo : MonoBehaviour {
     }
 
     private void Start() {
-        obj = ObjectManager.Instance.InstantiateObject("Assets/GameData/Prefabs/Attack.prefab", true); // 同步加载资源，且放到默认节点下
+        obj = ObjectManager.Instance.InstantiateObject(ConStr.ATTACK, true); // 同步加载资源，且放到默认节点下
     }
 
     private void Update() {
         if (Input.GetKeyDown(KeyCode.D)) {
-            obj = ObjectManager.Instance.InstantiateObject("Assets/GameData/Prefabs/Attack.prefab", true); // 同步加载资源，放到默认的节点下
+            obj = ObjectManager.Instance.InstantiateObject(ConStr.ATTACK, true); // 同步加载资源，放到默认的节点下
         }
         if (Input.GetKeyDown(KeyCode.A)) {
             ObjectManager.Instance.ReleaseObject(obj); // 释放资源，不删除缓存，放到回收节点下面

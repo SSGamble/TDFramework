@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 2931927256
+CRC: 4194419980
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -22,5 +22,8 @@ AssetBundleManifest:
       Name: particletest1
       Dependencies: {}
     Info_6:
+      Name: gameroot
+      Dependencies: {}
+    Info_7:
       Name: assetbundleconfig
       Dependencies: {}

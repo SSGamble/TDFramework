@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 4052151151
+CRC: 1997042741
 Hashes:
   AssetFileHash:
     serializedVersion: 2
@@ -14,7 +14,7 @@ ClassTypes:
 - Class: 213
   Script: {instanceID: 0}
 Assets:
-- Assets/GameData/UGUI/test3.png
-- Assets/GameData/UGUI/test2.png
-- Assets/GameData/UGUI/Test1.png
+- Assets/TDFramework/GameData/UGUI/test3.png
+- Assets/TDFramework/GameData/UGUI/test2.png
+- Assets/TDFramework/GameData/UGUI/Test1.png
 Dependencies: []
