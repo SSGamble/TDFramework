@@ -83,12 +83,26 @@ public class UIManager {
         canvasRate = Screen.height / (uiCamera.orthographicSize * 2);
     }
 
+
     /// <summary>
-    /// 显示或者隐藏所有 UI
+    /// 显示或者隐藏所有 UI，直接对父节点进行操作
     /// </summary>
-    public void ShowOrHideUI(bool show) {
-        if (uiRoot != null) { // 直接对父节点进行操作
-            uiRoot.gameObject.SetActive(show);
+    /// <param name="isShow">默认显示</param>
+    public void ShowOrHideUIRoot(bool isShow = true) {
+        if (uiRoot != null) {
+            uiRoot.gameObject.SetActive(isShow);
+        }
+    }
+
+    /// <summary>
+    /// 显示或者隐藏所有 UI，遍历子节点进行操作
+    /// </summary>
+    /// <param name="isShow">默认显示</param>
+    public void ShowOrHideUI(bool isShow = true) {
+        if (uiRoot != null) { 
+            for (int i = 0; i < uiRoot.childCount; i++) {
+                uiRoot.GetChild(i).gameObject.SetActive(isShow);
+            }
         }
     }
 

@@ -447,7 +447,7 @@ public class ResourceManager : Singleton<ResourceManager> {
     /// 不需要实例化的资源的卸载，根据对象，供外部调用
     /// </summary>
     /// <param name="obj"></param>
-    /// <param name="destoryObj">是否清楚缓存，默认还在缓存</param>
+    /// <param name="destoryObj">是否清除缓存，默认还在缓存</param>
     /// <returns></returns>
     public bool ReleaseResouce(Object obj, bool destoryObj = false) {
         if (obj == null) {

@@ -10,6 +10,9 @@ using UnityEngine;
 
 public class ConStr {
 
+    // 声音资源路径
+    public const string AudioPath = "";
+
     // 窗体 Prefab 的路径
     public const string UIWND_PRE_PATH = "Assets/TDFramework/Examples/UIFram/UIWnd/";
     // 窗口名称
